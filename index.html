@@ -2,20 +2,485 @@
 <html lang="de" itemscope itemtype="http://schema.org/WebPage">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h1>Company Presentation</h1>
+    <header class="bg-black">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between py-4 lg:px-2" aria-label="Global">
+        <div class="flex pr-10">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Yber</span>
+            <svg width="65" height="30" xmlns="http://www.w3.org/2000/svg">
+              <rect width="100%" height="100%" fill="black"/>
+              <text x="0" y="25" font-family="Arial, sans-serif" font-size="25" fill="white">Yber</text>
+            </svg>
+          </a>
+        </div>
+        <div class="flex lg:gap-x-8">
+          <a href="#" class="text-sm font-semibold leading-6 text-white">Ride</a>
+          <a href="#" class="text-sm font-semibold leading-6 text-white">Drive</a>
+          <a href="#" class="text-sm font-semibold leading-6 text-white">Business</a>
+          <a href="#" class="text-sm font-semibold leading-6 text-white">About</a>
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-6 items-center">
+          <a href="#" class="text-sm font-semibold leading-6 text-white">Help</a>
+          <a href="#" class="text-sm font-semibold leading-6 text-white">Log in</a>
+          <a href="#" class="rounded-full bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Sign up</a>
+        </div>
+      </nav>
+    </header>
 
-    <h2>Contact us!</h2>
-    <form method="post">
-      <div>Name</label>
-      <input type="text" name="name">
-       <div>E-Mail</label>
-      <input type="email">
-       <div class="required">
-          <label for="1532267296">Tell us more about your needs</label>
-          <textarea name="info"></textarea>
+    <div class="mx-auto max-w-7xl flex items-center justify-center mt-2">
+      <div class="flex items-center justify-between py-4 px-3 w-full">
+        <h1 class="font-semibold leading-6 text-xl">Ride</h1>
+
+        <div class="flex gap-x-6">
+          <a href="#" class="text-sm leading-6 text-gray-500 hover:text-black">Request a ride</a>
+          <a href="#" class="text-sm leading-6 text-gray-500 hover:text-black">Reserve a ride</a>
+          <a href="#" class="text-sm leading-6 text-gray-500 hover:text-black">See prices</a>
+          <a href="#" class="text-sm leading-6 text-gray-500 hover:text-black">Airport rides</a>
+        </div>
       </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl flex items-center justify-center">
+      <div class="overflow-hidden bg-white py-20">
+        <div class="mx-auto max-w-7xl">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+            <div class="p-6">
+              <div class="mx-auto max-w-lg">
+                <p class="mt-2 text-5xl font-bold text-gray-900 tracking-wide">Request a ride for now or later</p>
+                <p class="mt-8 text-md text-gray-900">
+                  Add your trip details, hop in, and go.
+                </p>
+
+                <form>
+                  <div class="mt-6">
+                    <label for="location" class="sr-only">Location</label>
+                    <input id="location" name="location" required class="w-96 rounded-lg bg-gray-100 border-0 px-3 py-3 text-gray-900 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black focus:bg-white focus:outline-none" placeholder="Enter location">
+                  </div>
+
+                  <div class="mt-6">
+                    <label for="destination" class="sr-only">Destination</label>
+                    <input id="destination" name="destination" required class="w-96 rounded-lg bg-gray-100 border-0 px-3 py-3 text-gray-900 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black focus:bg-white focus:outline-none" placeholder="Enter destination">
+                  </div>
+
+                  <div class="mt-10 flex items-center gap-x-6">
+                    <a href="#" class="rounded-lg bg-black px-6 py-3 font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">See prices</a>
+                    <a href="#" class="rounded-lg bg-gray-100 px-6 py-3 font-semibold shadow-sm hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-200">Schedule for later</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="sm:px-6 lg:px-0">
+              <div class="w-[558px] h-[558px] overflow-hidden rounded-xl">
+                <img src="images/yber_ride.webp" alt="Product screenshot" class="w-auto h-[558px] object-cover object-left" width="2000">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl flex items-center justify-center">
+      <div class="overflow-hidden bg-white py-20">
+        <div class="mx-auto max-w-6xl px-6">
+          <h2 class="text-4xl font-bold tracking-tight text-gray-900 mb-8">All-in-one service</h2>
+          <div class="grid gap-x-8 gap-y-8 grid-cols-3">
+            <div class="bg-gray-100 rounded-lg p-6 flex items-center justify-between gap-x-4">
+              <div class="gap-y-4 flex flex-col"> 
+                <h2 class="font-semibold text-gray-900">Ride</h2>
+                <p class="text-sm text-gray-900">
+                  Fly anywhere with Yber. Request a ride, hop in, and go.
+                </p>
+                <div class="mt-2">
+                  <a href="#" class="rounded-full bg-white px-4 py-3 text-sm hover:bg-gray-200">Details</a>
+                </div>
+              </div>
+
+              <img src="images/heli_drone.png" alt="drone" class="w-[100px] h-auto object-cover">
+            </div>
+
+            <div class="bg-gray-100 rounded-lg p-6 flex items-center justify-between gap-x-4">
+              <div class="gap-y-4 flex flex-col"> 
+                <h2 class="font-semibold text-gray-900">Delivery</h2>
+                <p class="text-sm text-gray-900">
+                  Packages or food. Our drones will pick up anything and get it to you.
+                </p>
+                <div class="mt-2">
+                  <a href="#" class="rounded-full bg-white px-4 py-3 text-sm hover:bg-gray-200">Details</a>
+                </div>
+              </div>
+
+              <img src="images/drone.png" alt="drone" class="w-[100px] h-auto object-cover">
+            </div>
+
+            <div class="bg-gray-100 rounded-lg p-6 flex items-center justify-between gap-x-4">
+              <div class="gap-y-4 flex flex-col"> 
+                <h2 class="font-semibold text-gray-900">Fleet</h2>
+                <p class="text-sm text-gray-900">
+                  Control a whole fleet with simple taps.
+                </p>
+                <div class="mt-2">
+                  <a href="#" class="rounded-full bg-white px-4 py-3 text-sm hover:bg-gray-200">Details</a>
+                </div>
+              </div>
+
+              <img src="images/yber_fleet.png" alt="drone" class="w-[100px] h-auto object-cover">
+            </div>
+
+            <div class="bg-gray-100 rounded-lg p-6 flex items-center justify-between gap-x-4">
+              <div class="gap-y-4 flex flex-col"> 
+                <h2 class="font-semibold text-gray-900">Reserve</h2>
+                <p class="text-sm text-gray-900">
+                  Fly anywhere with Yber. Request a ride, hop in, and go.
+                </p>
+                <div class="mt-2">
+                  <a href="#" class="rounded-full bg-white px-4 py-3 text-sm hover:bg-gray-200">Details</a>
+                </div>
+              </div>
+
+              <img src="images/reserve.png" alt="drone" class="w-[100px] h-auto object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mx-auto max-w-7xl flex items-center justify-center">
+      <div class="overflow-hidden bg-white py-20">
+        <div class="mx-auto max-w-7xl">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+            <div class="p-6">
+              <div class="max-w-md">
+                <p class="mt-2 text-3xl font-bold text-gray-900 tracking-wide">Reserve a ride that’s ready when you are</p>
+                <p class="mt-8 text-md text-gray-900">
+                  Experience the future of urban mobility today!
+                  Simply reserve your ride, and our drones will be ready to take you wherever you need to go.
+                </p>
+
+                <div class="mt-10">
+                  <a href="#" class="rounded-lg bg-black px-6 py-3 font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Learn more about Yber Reserve</a>
+                </div>
+              </div>
+            </div>
+            <div class="sm:px-6 lg:px-0">
+              <div class="w-[558px] h-[400px] overflow-hidden rounded-xl">
+                <img src="images/yber_reserve.webp" alt="Product screenshot" class="w-[558px] h-auto object-cover object-left" width="2000">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-black">
+      <div class="mx-auto flex max-w-7xl items-center justify-between py-12 lg:px-2">
+        <div class="mx-auto max-w-7xl">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start px-16">
+            <div class="sm:px-6 lg:px-0">
+              <div class="w-[558px] h-[400px] overflow-hidden">
+                <img src="images/membership.webp" alt="Product screenshot" class="w-[558px] h-auto object-cover object-left">
+              </div>
+            </div>
+
+            <div class="p-6 pl-16">
+              <div class="max-w-md">
+                <p class="mt-2 text-3xl font-bold text-white tracking-wide">
+                  Go where you want. Get what you need. All with Yber One.
+                </p>
+                <p class="mt-8 text-md text-white">
+                  One membership for member pricing and experiences on rides, deliveries, and more.
+                </p>
+
+                <div class="mt-10">
+                  <a href="#" class="rounded-lg bg-white px-6 py-3 font-semibold shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl flex items-center justify-center">
+      <div class="overflow-hidden bg-white py-20">
+        <div class="mx-auto max-w-6xl px-6">
+          <h2 class="text-4xl font-bold tracking-tight text-gray-900 mb-8">Travel your way with the Yber app</h2>
+          <div class="grid gap-x-8 gap-y-8 grid-cols-3">
+            <div class="flex flex-col gap-y-4">
+              <img src="images/drone_options.webp" alt="drone" class="w-[400px] h-auto object-cover">
+
+              <div class="gap-y-4 flex flex-col"> 
+                <h2 class="font-semibold text-gray-900">Drone options</h2>
+                <p class="text-gray-900">
+                  There's more than one way to move with Yber, no matter where you are or where you're headed next.
+                </p>
+                <div class="mt-6">
+                  <a href="#" class="rounded-lg bg-black px-6 py-3 hover:bg-gray-700 text-white">Search drone options</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-y-4">
+              <img src="images/airports.webp" alt="drone" class="w-[400px] h-auto object-cover">
+
+              <div class="gap-y-4 flex flex-col"> 
+                <h2 class="font-semibold text-gray-900">Airports and train stations</h2>
+                <p class="text-gray-900">
+                  Schedule a ride for one less thing to worry about and experience seamless travel with our cutting-edge drones.
+                </p>
+                <div class="mt-6">
+                  <a href="#" class="rounded-lg bg-black px-6 py-3 hover:bg-gray-700 text-white">Search drone stations</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-y-4">
+              <img src="images/cities.webp" alt="drone" class="w-[400px] h-auto object-cover">
+
+              <div class="gap-y-4 flex flex-col"> 
+                <h2 class="font-semibold text-gray-900">10,000+ cities</h2>
+                <p class="text-gray-900">
+                  Our app is available in more than ten thousands of cities worldwide, allowing you to request a drone ride no matter where you are.
+                </p>
+                <div class="mt-6">
+                  <a href="#" class="rounded-lg bg-black px-6 py-3 hover:bg-gray-700 text-white">Search drone options</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-black">
+      <div class="mx-auto flex max-w-7xl items-center justify-between py-12 lg:px-2">
+        <div class="mx-auto max-w-7xl">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start px-16">
+            <div class="p-6">
+              <div class="max-w-md">
+                <p class="mt-2 text-3xl font-bold text-white tracking-wide">
+                  Looking for business partnership?
+                </p>
+                <p class="mt-8 text-md text-white">
+                  Whether you're looking to integrate cutting-edge drone transportation into your services,
+                  enhance your customer experience,
+                  or explore innovative logistics solutions, we are here to collaborate.
+                </p>
+                <div class="mt-10">
+                  <a href="#" class="rounded-lg bg-white px-6 py-3 font-semibold shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Get started</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="sm:px-6 lg:px-0">
+              <div class="w-[558px] h-[350px] overflow-hidden">
+                <img src="images/yber_business.webp" class="w-[558px] h-auto object-cover object-left">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+      <svg class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+        <defs>
+        <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-64" patternUnits="userSpaceOnUse">
+        <path d="M100 200V.5M.5 .5H200" fill="none" />
+        </pattern>
+        </defs>
+        <svg x="50%" y="-64" class="overflow-visible fill-gray-50">
+          <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M299.5 800h201v201h-201Z" stroke-width="0" />
+        </svg>
+        <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
+      </svg>
+      <div class="mx-auto max-w-xl lg:max-w-4xl">
+        <h2 class="text-4xl font-bold tracking-tight text-gray-900">Let's talk about innovation</h2>
+        <p class="mt-2 text-lg leading-8 text-gray-600">We help companies and individuals enhance their logistic experience</p>
+        <div class="mt-16 flex gap-16 sm:gap-y-20 lg:flex-row items-start">
+          <form action="#" method="POST" class="lg:flex-auto">
+            <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+              <div>
+                <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
+                <div class="mt-2.5">
+                  <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+              </div>
+              <div>
+                <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
+                <div class="mt-2.5">
+                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+              </div>
+              <div class="sm:col-span-2">
+                <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+                <div class="mt-2.5">
+                  <textarea id="message" name="message" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="mt-10">
+              <button type="submit" class="block w-full rounded-md bg-black px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2">Let’s talk</button>
+            </div>
+            <p class="mt-4 text-sm leading-6 text-gray-500">By submitting this form, I agree to the <a href="#" class="font-semibold text-gray-900">privacy&nbsp;policy</a>.</p>
+          </form>
+          <div class="lg:w-80 lg:flex-none">
+            <div class="flex items-center space-x-2">
+              <img class="h-8 w-auto" src="images/skyexpress_logo.png" alt="">
+              <label class="text-lg tracking-wide font-bold text-blue-500">SkyExpress</label>
+            </div>
+            <figure class="mt-10">
+              <blockquote class="text-lg font-semibold leading-8 text-gray-900">
+                <p>
+                  “Partnering with Yber has revolutionized our delivery operations.
+                  Their cutting-edge drone technology has significantly reduced our transit times and operational costs.
+                  The integration was seamless, and our customers are thrilled with the faster service.”
+                </p>
+              </blockquote>
+              <figcaption class="mt-10 flex gap-x-6">
+                <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=96&h=96&q=80" alt="" class="h-12 w-12 flex-none rounded-full bg-gray-50">
+                <div>
+                  <div class="text-base font-semibold text-gray-900">Jane Doe</div>
+                  <div class="text-sm leading-6 text-gray-600">CEO of SkyExpress</div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-black" aria-labelledby="footer-heading">
+
+      <h2 id="footer-heading" class="sr-only">Footer</h2>
+      <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div class="space-y-8">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Yber</span>
+              <svg width="65" height="30" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="black"/>
+                <text x="0" y="25" font-family="Arial, sans-serif" font-size="25" fill="white">Yber</text>
+              </svg>
+            </a>
+            <p class="text-sm leading-6 text-gray-300">Transforming Mobility Through Innovative Aerial Solutions.</p>
+            <div class="flex space-x-6">
+              <a href="#" class="text-gray-500 hover:text-gray-400">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-400">
+                <span class="sr-only">Instagram</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-400">
+                <span class="sr-only">X</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-400">
+                <span class="sr-only">GitHub</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-400">
+                <span class="sr-only">YouTube</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 class="text-sm font-semibold leading-6 text-white">Solutions</h3>
+                <ul role="list" class="mt-6 space-y-4">
+                  <li>
+                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Marketing</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Analytics</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Commerce</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Insights</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-10 md:mt-0">
+                <h3 class="text-sm font-semibold leading-6 text-white">Support</h3>
+                <ul role="list" class="mt-6 space-y-4">
+                  <li>
+                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Documentation</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Guides</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">API Status</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 class="text-sm font-semibold leading-6 text-white">Company</h3>
+                <ul role="list" class="mt-6 space-y-4">
+                  <li>
+                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">About</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Jobs</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Press</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Partners</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-10 md:mt-0">
+                <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
+                <ul role="list" class="mt-6 space-y-4">
+                  <li>
+                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Claim</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Privacy</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Terms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+          <p class="text-xs leading-5 text-gray-400">&copy; 2024 Yber Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
